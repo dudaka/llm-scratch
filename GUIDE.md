@@ -54,10 +54,23 @@ mkdir tests        # put test_*.py files here
 uv run pytest
 ```
 
-## Notebooks (optional)
+## Notebooks
+
+Step-by-step experiments live in `notebooks/`, in learning order:
+
+| Notebook | Covers |
+| --- | --- |
+| `tokenizing-text.ipynb` | Download `the-verdict.txt` and split it into tokens with a regex |
+| `tokens-2-ids.ipynb` | Build a vocabulary, map tokens to IDs, `SimpleTokenizerV1`/`V2` with `<\|unk\|>` and `<\|endoftext\|>` |
+| `byte-pair-encoding.ipynb` | GPT-2 byte-pair encoding with `tiktoken` |
+
+`the-verdict.txt` is the sample text. The notebooks open it by relative path, so run them with `notebooks/` as the working directory (the default in VS Code and Jupyter).
+
+Notebooks need a kernel:
 
 ```bash
-uv add --dev jupyterlab
+uv add --dev ipykernel     # for VS Code: select the .venv interpreter as the kernel
+uv add --dev jupyterlab    # optional, for the browser UI
 uv run jupyter lab
 ```
 

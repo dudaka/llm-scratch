@@ -20,3 +20,8 @@ build-backend = "uv_build"
 
 [tool.uv]
 python-preference = "only-managed"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
