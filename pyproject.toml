@@ -4,10 +4,12 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
-    { name = "dudaka", email = "htdung08021990@gmail.com" }
+    { name = "dudaka", email = "htdung820@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "tiktoken>=0.14.0",
+]
 
 [project.scripts]
 llm-scratch = "llm_scratch:main"
