@@ -6,7 +6,7 @@
 llm-scratch/
 ├── pyproject.toml         # project metadata, dependencies, uv settings
 ├── uv.lock                # exact pinned versions (commit this)
-├── .python-version        # 3.12
+├── .python-version        # 3.13
 ├── .venv/                 # virtual environment (managed by uv, don't edit)
 └── src/llm_scratch/
     └── __init__.py        # package code; main() is the CLI entry point
